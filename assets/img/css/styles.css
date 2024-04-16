@@ -1,0 +1,141 @@
+/* Estilos gerais */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilos para o rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+
+/* Estilos para as seções */
+section {
+  padding: 50px 0;
+}
+
+/* Estilos para a seção 1 */
+#secao1 .profile-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+#secao1 img {
+  margin-right: 20px;
+  width: 150px; /* Adiciona uma largura fixa para a imagem */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+#secao1 h2,
+#secao1 p,
+#secao1 .d-flex {
+  margin: 0;
+}
+
+#secao1 .d-flex {
+  justify-content: flex-start;
+}
+
+/* Estilos para os ícones sociais */
+.social-icons a {
+  color: #333;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+/* Media queries para dispositivos móveis */
+@media screen and (max-width: 991px) {
+  header {
+    padding: 10px 0;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  nav ul li {
+    margin-right: 10px;
+  }
+
+  section {
+    padding: 30px 0;
+  }
+
+  #secao1 .profile-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #secao1 img {
+    margin-bottom: 20px; /* Adiciona margem inferior para separar a imagem do texto */
+  }
+
+  #secao1 .profile-container > div {
+    margin-right: 0;
+    text-align: center; /* Centraliza o texto */
+  }
+
+  #secao1 .d-flex {
+    justify-content: center; /* Centraliza os ícones sociais */
+  }
+}
+
+#colegas-de-trabalho {
+  text-align: center; /* Centraliza o título */
+}
+
+/* Estilos para os cards */
+.card-img-top {
+  height: 200px; /* Ajusta a altura da imagem do card */
+  object-fit: cover; /* Mantém a proporção da imagem e cobre o card */
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-text {
+  color: #6c757d; /* Texto cinza para descrição */
+}
+
+.btn {
+  background-color: #007bff; /* Cor do botão azul */
+  border-color: #007bff;
+}
+
+#colegas-de-trabalho .card-img-top {
+  width: 100px; /* Ajusta a largura conforme necessário */
+  height: 100px; /* Ajusta a altura conforme necessário */
+}
